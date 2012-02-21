@@ -1,0 +1,61 @@
+<?xml version="1.0"?>
+<CONFIG>
+  <Package Version="3">
+    <PathDelim Value="\"/>
+    <Name Value="zedlib"/>
+    <Author Value="Momchil Rangelov"/>
+    <CompilerOptions>
+      <Version Value="9"/>
+      <PathDelim Value="\"/>
+      <SearchPaths>
+        <UnitOutputDirectory Value="lib\$(TargetCPU)-$(TargetOS)"/>
+      </SearchPaths>
+      <Parsing>
+        <SyntaxOptions>
+          <UseAnsiStrings Value="False"/>
+        </SyntaxOptions>
+      </Parsing>
+      <Other>
+        <CompilerPath Value="$(CompPath)"/>
+      </Other>
+    </CompilerOptions>
+    <Description Value="TZedDBTreeView is Data Aware TreeView. It is designed to load self-referenced hierarchical data sets. It is fast and loads all the data when it is built. There's no need to rebuild the tree for every modification. Data's nature independent, so you can connect it to database on your choice. Supports browsing and modifications both ways (Tree -> Dataset, dataset -> Tree).
+
+You can report bugs or send comments at ms_rangelov@hotmail.com"/>
+    <License Value="This source is free software; you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation at <http://www.gnu.org/copyleft/gpl.html>
+
+This code is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE."/>
+    <Version Minor="8"/>
+    <Files Count="2">
+      <Item1>
+        <Filename Value="zeddbtreeview.pas"/>
+        <HasRegisterProc Value="True"/>
+        <UnitName Value="ZedDBTreeView"/>
+      </Item1>
+      <Item2>
+        <Filename Value="zedtreeview.pas"/>
+        <UnitName Value="ZedTreeView"/>
+      </Item2>
+    </Files>
+    <Type Value="RunAndDesignTime"/>
+    <RequiredPkgs Count="3">
+      <Item1>
+        <PackageName Value="IDEIntf"/>
+      </Item1>
+      <Item2>
+        <PackageName Value="LCL"/>
+      </Item2>
+      <Item3>
+        <PackageName Value="FCL"/>
+        <MinVersion Major="1" Valid="True"/>
+      </Item3>
+    </RequiredPkgs>
+    <UsageOptions>
+      <UnitPath Value="$(PkgOutDir)"/>
+    </UsageOptions>
+    <PublishOptions>
+      <Version Value="2"/>
+      <IgnoreBinaries Value="False"/>
+    </PublishOptions>
+  </Package>
+</CONFIG>
