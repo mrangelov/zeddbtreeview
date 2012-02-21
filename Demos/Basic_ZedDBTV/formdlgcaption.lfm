@@ -1,0 +1,50 @@
+object frmDlgCaption: TfrmDlgCaption
+  Left = 360
+  Height = 128
+  Top = 205
+  Width = 307
+  BorderStyle = bsDialog
+  Caption = 'Enter a name'
+  ClientHeight = 128
+  ClientWidth = 307
+  LCLVersion = '0.9.30.2'
+  object edtCaption: TEdit
+    Left = 42
+    Height = 21
+    Top = 32
+    Width = 222
+    TabOrder = 0
+  end
+  object pnlButtons: TPanel
+    Left = 0
+    Height = 48
+    Top = 80
+    Width = 307
+    Align = alBottom
+    ClientHeight = 48
+    ClientWidth = 307
+    TabOrder = 1
+    object bitbtnOK: TBitBtn
+      Left = 64
+      Height = 30
+      Top = 8
+      Width = 75
+      Caption = '&OK'
+      Default = True
+      Kind = bkOK
+      ModalResult = 1
+      TabOrder = 0
+    end
+    object bitbtnCancel: TBitBtn
+      Left = 180
+      Height = 30
+      Top = 8
+      Width = 75
+      Cancel = True
+      Caption = 'Cancel'
+      Kind = bkCancel
+      ModalResult = 2
+      TabOrder = 1
+    end
+  end
+end
